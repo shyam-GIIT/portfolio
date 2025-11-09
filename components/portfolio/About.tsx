@@ -91,7 +91,7 @@ export function About() {
               >
                 <motion.div
                   whileHover={{ scale: 1.02, x: 10 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  transition={{ type: "spring" as const, stiffness: 300 }}
                 >
                   <Card className="relative p-4 sm:p-6 border border-neutral-800/50 bg-gradient-to-br from-neutral-900/90 via-neutral-950/90 to-neutral-900/90 backdrop-blur-xl hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 cursor-pointer group overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-300" />
