@@ -19,6 +19,14 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: '/resume.pdf',
+        destination: '/resume.pdf.pdf',
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

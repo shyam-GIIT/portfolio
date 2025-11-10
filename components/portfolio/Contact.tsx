@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Phone } from 'lucide-react'
+import { Github, Phone, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -20,6 +20,14 @@ const contactLinks = [
     color: 'text-blue-500',
     hoverColor: 'text-blue-400',
     value: '9080731779',
+  },
+  {
+    icon: Mail,
+    name: 'Email',
+    href: 'mailto:shyamkumar890145@gmail.com',
+    color: 'text-pink-500',
+    hoverColor: 'text-pink-400',
+    value: 'shyamkumar890145@gmail.com',
   },
 ]
 

@@ -11,6 +11,8 @@ const navItems = [
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
+  // Open resume PDF in a new tab
+  { name: 'Resume', href: '/resume.pdf', external: true },
 ]
 
 export function Navigation() {
@@ -56,6 +58,8 @@ export function Navigation() {
                 <motion.a
                   key={item.name}
                   href={item.href}
+                  target={(item as any).external ? '_blank' : undefined}
+                  rel={(item as any).external ? 'noopener noreferrer' : undefined}
                   className="text-neutral-300 hover:text-white px-3 py-2 text-sm font-semibold transition-all duration-300 relative group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -103,6 +107,8 @@ export function Navigation() {
                 <motion.a
                   key={item.name}
                   href={item.href}
+                  target={(item as any).external ? '_blank' : undefined}
+                  rel={(item as any).external ? 'noopener noreferrer' : undefined}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-neutral-300 hover:text-white block px-3 py-2 text-base font-medium"
                   initial={{ opacity: 0, x: -20 }}
